@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choose a Design · Western Group E-card</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="brand" href="index.html"><img src="assets/img/western-group.png" alt="Western Group" width="600" height="399"></a>
+  <main class="stage">
+    <div class="page-head">
+      <span class="eyebrow" data-text="occasion.tagline">Durga Puja 2026</span>
+      <h1>Choose your card</h1>
+      <p>Swipe or use the arrows, then tap the card to personalize it.</p>
+      <p class="company-chip" data-company-chip hidden>For <strong data-company-name></strong> · <a href="companies.html">Change company</a></p>
+    </div>
+
+    <section class="picker" aria-label="Card designs">
+      <button class="nav-side" id="prev" type="button" aria-label="Previous card"><span class="arrow" aria-hidden="true">←</span><span class="label">Previous card</span></button>
+      <div class="deck-stage">
+        <div class="deck" id="deck"></div>
+      </div>
+      <button class="nav-side" id="next" type="button" aria-label="Next card"><span class="label">Next card</span><span class="arrow" aria-hidden="true">→</span></button>
+      <div class="deck-meta" aria-live="polite">
+        <strong id="deck-label"></strong>
+        <span id="deck-count"></span>
+      </div>
+      <button class="btn btn-primary" id="use-card" type="button">Use this design</button>
+      <a class="samples-link" href="gallery.html" data-company-link>
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="1" y="1" width="6" height="6" rx="2"/><rect x="9" y="1" width="6" height="6" rx="2"/><rect x="1" y="9" width="6" height="6" rx="2"/><rect x="9" y="9" width="6" height="6" rx="2"/></svg>
+        All samples
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> <span data-text="group.name">Western Group</span></p>
+      <p>Festive e-cards for the Western Group family · <a href="https://westerngroupbd.com/" target="_blank" rel="noopener">westerngroupbd.com</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/templates.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/cards.js"></script>
+</body>
+</html>

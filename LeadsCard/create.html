@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personalize · Western Group E-card</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="brand" href="index.html"><img src="assets/img/western-group.png" alt="Western Group" width="600" height="399"></a>
+  <main class="container create">
+    <div class="create-back">
+      <a class="back-link" href="cards.html" data-company-link>← Want to try another card?</a>
+    </div>
+
+    <section class="create-preview" aria-label="Card preview">
+      <div class="preview-frame"><canvas id="preview" width="1080" height="1350"></canvas></div>
+      <p class="preview-note">Downloads as a 1080 × 1350 PNG, sized for Facebook, Instagram and LinkedIn.</p>
+    </section>
+
+    <section class="create-panel">
+      <h1>Personalize text</h1>
+      <p class="company-chip" data-company-chip hidden>For <strong data-company-name></strong> · <a href="companies.html">Change company</a></p>
+
+      <form id="card-form" novalidate>
+        <label class="field">
+          <span>Your name</span>
+          <input id="name" name="name" type="text" maxlength="40" placeholder="Your Name" autocomplete="name">
+        </label>
+        <label class="field">
+          <span>Your designation</span>
+          <input id="designation" name="designation" type="text" maxlength="60" placeholder="Your Designation" autocomplete="organization-title">
+        </label>
+        <div class="field">
+          <span>Design <small id="design-name"></small></span>
+          <div class="thumbs" id="thumbs" role="radiogroup" aria-label="Card design"></div>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Download</button>
+          <button type="button" class="btn btn-ghost" id="share">Share</button>
+        </div>
+        <p class="hint" id="hint" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> <span data-text="group.name">Western Group</span></p>
+      <p>Festive e-cards for the Western Group family · <a href="https://westerngroupbd.com/" target="_blank" rel="noopener">westerngroupbd.com</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/templates.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/create.js"></script>
+</body>
+</html>
